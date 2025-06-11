@@ -13,4 +13,3 @@ This project was developed as part of a university financial time series course.
 - Translating volatility into actionable risk insights
 - Presenting risk metrics to simulated "hedge fund stakeholders"
 
-> View the full notebook here: [Visa Inc. Risk Modelling Project.ipynb](./Visa%20Inc.%20Risk%20Modelling%20Project.ipynb)
