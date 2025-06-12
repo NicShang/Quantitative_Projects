@@ -1,4 +1,4 @@
-# ETF Portfolio Optimization | University of Sydney Capstone Project
+# ETF Portfolio Optimization | Finance Capstone Project
 
 This project mirrors many operational workflows seen in real-world investment operations—such as compliance monitoring, mandate interpretation, and systematic trade implementation—making it directly relevant for middle-office and investment operations roles.
    
