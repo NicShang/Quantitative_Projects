@@ -1,3 +1,33 @@
+# ETF Portfolio Optimization | University of Sydney Capstone Project
+   
+    ## Key Components
+        - This project simulates a $5 million ETF portfolio construction for an assertive-risk client using a core-satellite 
+        investment strategy, as part of the final capstone at the University of Sydney.
+        
+        - The objective was to design a portfolio of ASX-listed ETFs that meets the investor’s return target of CPI + 6%, 
+        while complying with constraints on:
+        
+            Strategic Asset Allocation (SAA)
+            
+            Tactical Asset Allocation (TAA)
+            
+            Minimum/maximum ETF weights
+            
+            Core-satellite split (65–85% core, 15–35% satellite)
+
+    ## Technical Highlights
+        Portfolio Optimization: Implemented in Python using NumPy, Pandas, and SciPy.optimize.minimize, enforcing real-world investment 
+        rules (e.g. total weight = 100%, individual bounds, core ≥ 65%).
+        
+        Risk-Adjusted Allocation: Maximized Sharpe ratio and simulated risk-return space using Monte Carlo simulation.
+        
+        Constraint Handling: Encoded portfolio eligibility criteria (e.g., max 10% per satellite ETF) into optimizer via SLSQP constraints.
+        
+        Efficient Frontier Visualization: Plotted expected return vs volatility with Sharpe color scaling via Plotly.
+
+🧩 This project mirrors many operational workflows seen in real-world investment operations—such as compliance monitoring, mandate interpretation, and systematic trade implementation—making it directly relevant for middle-office and investment operations roles.
+
+
 # Visa Inc. Risk Modelling Project
 
 This project was developed as part of a university financial time series course. The goal was to assess portfolio risk and volatility for Visa Inc. using AR-GARCH modeling, Monte Carlo simulation, and VaR/Expected Shortfall forecasting.
