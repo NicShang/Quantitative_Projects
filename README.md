@@ -1,4 +1,6 @@
 # ETF Portfolio Optimization | University of Sydney Capstone Project
+
+This project mirrors many operational workflows seen in real-world investment operations—such as compliance monitoring, mandate interpretation, and systematic trade implementation—making it directly relevant for middle-office and investment operations roles.
    
     ## Key Components
         - This project simulates a $5 million ETF portfolio construction for an assertive-risk client using a core-satellite 
@@ -24,8 +26,6 @@
         Constraint Handling: Encoded portfolio eligibility criteria (e.g., max 10% per satellite ETF) into optimizer via SLSQP constraints.
         
         Efficient Frontier Visualization: Plotted expected return vs volatility with Sharpe color scaling via Plotly.
-
-🧩 This project mirrors many operational workflows seen in real-world investment operations—such as compliance monitoring, mandate interpretation, and systematic trade implementation—making it directly relevant for middle-office and investment operations roles.
 
 
 # Visa Inc. Risk Modelling Project
