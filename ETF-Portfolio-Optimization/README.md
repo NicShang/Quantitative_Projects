@@ -1,27 +1,60 @@
-# ETF Portfolio Optimization | Finance Capstone Project
+# ETF Portfolio Optimization | Finance Capstone Project  
+University of Sydney | 2024  
 
-This project simulates a $5 million ETF portfolio construction aligned with CPI+6% return objective, using a core-satellite allocation framework. It mirrors real-world fund operations including portfolio modeling, scenario simulation, and constraint handling.
-
-## Key Objectives
-
-- Design a diversified portfolio of ASX-listed ETFs that meets both return and risk constraints.
-- Align portfolio construction with client mandates such as strategic/tactical allocation ranges, ETF weight limits, and sector diversification.
-- Simulate return and risk using Monte Carlo methods, stress-test allocations, and visualize trade-offs.
-
-## Key Features
-
-- ✅ Python-based optimizer using `scipy.optimize` and `NumPy`  
-- ✅ Constraint-aware design (e.g., 65–85% core, max 10% per ETF)  
-- ✅ Monte Carlo simulation for Sharpe-max selection  
-- ✅ Front-end HTML visualization and investor reporting format
-
-## Skills Highlight
-
-- Portfolio construction under real-world constraints  
-- Efficient frontier visualization  
-- Sharpe ratio maximization and return variance analysis  
-- Practical experience with Python, NumPy, Pandas, Matplotlib, and Plotly
+This project simulates a real-world ETF portfolio construction and optimization process, reflecting the logic used in institutional investment mandates. Developed in Python, it integrates quantitative techniques and reporting practices commonly used in fund strategy, portfolio analytics, and client reporting roles.
 
 ---
 
-> This project was part of a postgraduate capstone at the University of Sydney, intended to bridge theory and industry execution workflows.
+## 🎯 Objective  
+To construct a CPI+6% risk-adjusted ETF portfolio using a core-satellite strategy and optimize asset allocation under regulatory constraints and Sharpe maximization objectives.
+
+---
+
+## 📌 Key Features  
+- **Core-Satellite Allocation**: 65% core, 35% satellite ETF exposure  
+- **Return Target**: CPI + 6% expected return  
+- **Constraints**:  
+  - Total weight = 100%  
+  - Core ≥ 65%  
+  - Satellite ETF ≤ 15% each  
+- **Mandate Compliance**: Reflects real mandates (e.g., CFS fixed income strategy)
+
+---
+
+## 🧠 Technical Highlights  
+- **Python Tools**: NumPy, SciPy.optimize, Matplotlib, Plotly  
+- **Sharpe-Max Portfolio Optimization**: Constraint-based mean-variance optimization  
+- **Monte Carlo Simulation**: 5,000 random weight simulations to evaluate return/volatility trade-offs  
+- **Efficient Frontier Visualization**: Dynamic risk-return mapping  
+- **Scenario Testing**: Stress-tested return and Sharpe sensitivity
+
+---
+
+## 🗂️ Project Structure  
+- `ETF Portfolio Optimization.ipynb`: Optimization logic and visualization  
+- `ETF Portfolio Optimization.html`: Exported report (interactive)  
+- `README.md`: Summary and explanation  
+- (Optional) `/Data`: ETF returns dataset  
+- (Optional) `/Reports`: Output charts or strategy commentary
+
+---
+
+## 🚀 Transferable Skills  
+- Portfolio modeling and return attribution  
+- Regulatory constraints encoding  
+- Python-based scenario diagnostics  
+- Risk/return trade-off interpretation  
+- Communicating model outputs in fund reporting language
+
+---
+
+## 📎 Sample Outputs  
+> Efficient frontier plotted with Sharpe-max solution  
+> Optimization weights table under constraints  
+> Return distribution and downside risk profile
+
+---
+
+## 🔗 Author  
+Nic Shang | MCom (Finance & Data Analytics)  
+This capstone was developed as part of the University of Sydney finance curriculum.
