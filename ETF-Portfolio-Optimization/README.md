@@ -30,15 +30,6 @@ To construct a CPI+6% risk-adjusted ETF portfolio using a core-satellite strateg
 
 ---
 
-## 🗂️ Project Structure  
-- `ETF Portfolio Optimization.ipynb`: Optimization logic and visualization  
-- `ETF Portfolio Optimization.html`: Exported report (interactive)  
-- `README.md`: Summary and explanation  
-- (Optional) `/Data`: ETF returns dataset  
-- (Optional) `/Reports`: Output charts or strategy commentary
-
----
-
 ## 🚀 Transferable Skills  
 - Portfolio modeling and return attribution  
 - Regulatory constraints encoding  
@@ -53,8 +44,4 @@ To construct a CPI+6% risk-adjusted ETF portfolio using a core-satellite strateg
 > Optimization weights table under constraints  
 > Return distribution and downside risk profile
 
----
 
-## 🔗 Author  
-Nic Shang | MCom (Finance & Data Analytics)  
-This capstone was developed as part of the University of Sydney finance curriculum.
