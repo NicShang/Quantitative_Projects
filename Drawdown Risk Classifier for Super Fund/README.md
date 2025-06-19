@@ -1,50 +1,58 @@
-# 🧠 Drawdown Risk Classifier for Superannuation Portfolios
+# Max Drawdown Predictor (Cbus Super Portfolio Simulation)
 
-This project simulates a diversified superannuation (pension) portfolio inspired by Cbus Super’s publicly disclosed asset allocations. The aim is to construct a predictive framework to classify periods where the portfolio is at risk of experiencing a significant drawdown (e.g., >10% within 20 trading days).
-
----
-
-## 🔍 Why NAV, not just volatility?
-
-While volatility (standard deviation) is a common risk metric, it fails to capture **cumulative losses, sustained downtrends, and tail events**. In real-world portfolio oversight—especially for retirement funds—risk is not about daily noise but whether the portfolio enters a **prolonged drawdown**.
-
-> 📈 This project constructs the **portfolio-level NAV series** as the foundation for evaluating drawdowns, stress regimes, and tail-risk exceedance—something volatility alone cannot detect.
+This project simulates a Cbus Super Fund–style multi-asset portfolio and uses logistic regression to predict whether a drawdown greater than 5% will occur in the next 30 days. It combines ETF-based proxy modeling, NAV construction, and classification techniques to turn market features into actionable early warnings.
 
 ---
 
-## 📦 Project Overview
+## Project Summary
 
-- ✅ Simulate multi-asset super fund portfolio NAV using ETF proxies (VAS.AX, IVV, VAF, VNQ, IFRA, IEM, AAA)
-- ✅ Generate future 20-day rolling drawdown as the basis for classification
-- ✅ Create engineered features (5-day return, 20-day return, 20-day volatility)
-- ✅ Train logistic regression and gradient boosting models to predict drawdown events
-- ✅ Evaluate classification performance (precision, recall, ROC-AUC)
+- Simulates the “Growth (MySuper)” option of Cbus Super using publicly available ETF proxies.
 
----
+- Constructs a historical NAV curve by weighting ETFs based on Cbus asset allocations.
 
-## 🧰 Tools & Techniques
+- Labels each date based on whether the portfolio suffers a maximum drawdown > 5% in the next 30 days.
 
-- `Python`, `pandas`, `yfinance`, `scikit-learn`, `plotly`
-- Portfolio NAV construction
-- Labeling regime risk via rolling max drawdown
-- Logistic Regression / XGBoost classification
-- Model explainability (planned: SHAP)
+- Uses lagging features (e.g., 5-day return, 20-day volatility) to predict future drawdowns via logistic regression.
+
+- Evaluates model performance using confusion matrix, classification report, ROC-AUC score, and curve.
 
 ---
 
-## 🧩 Key Insight
+## Key Results
 
-> Portfolio NAV is the foundation of risk truth in long-horizon investing.  
-> This project demonstrates how downside-aware models can complement volatility models by **anticipating actual portfolio stress**, not just noise.
+- Model Type: Logistic Regression with class_weight=balanced
+
+- Target: Will there be a drawdown > 5% in next 30 days?
+
+- Test Accuracy: 85%
+
+- AUC Score: 0.99
+
+- Recall for Drawdown Class (1): 100%
+
+- Model demonstrates strong ability to identify upcoming drawdowns, albeit with some false positives.
 
 ---
 
-## 📊 Example Output (in progress)
+## Tech Stack
 
-- Simulated NAV curve  
-- 20-day future drawdown curve  
-- Predicted probability of entering drawdown zone  
-- Classification report (confusion matrix, ROC)
+- Python, JupyterLab
+
+- pandas, NumPy, yfinance
+
+- scikit-learn (Pipeline, LogisticRegression, metrics)
+
+- plotly, matplotlib (for visualization)
+
+---
+
+## Why I Built This Project
+
+  Superannuation funds like Cbus exist to preserve and grow capital over decades, not chase short-term alpha. Their portfolios must support members' retirement needs 20–30 years into the future—making drawdown risk management far more critical than tactical gains.
+  
+  I built this project to reflect that long-term, risk-conscious mindset. By replicating Cbus’s asset allocation with ETFs and applying logistic regression to predict forward-looking drawdowns, I aimed to simulate how pension risk teams can anticipate periods of elevated downside risk based on recent return and volatility behavior.
+  
+  This work helped me connect portfolio modeling with fiduciary duty, reinforcing the idea that in long-horizon investing, risk awareness—not return maximization—is what truly matters.
 
 ---
 
@@ -53,13 +61,3 @@ While volatility (standard deviation) is a common risk metric, it fails to captu
 - ETF prices via [Yahoo Finance](https://finance.yahoo.com)
 - Portfolio weightings based on public [Cbus Super holdings (Dec 2024)](https://www.cbussuper.com.au/super/my-investment-options/cbus-investment-holdings)
 
----
-
-## ✍️ Author
-
-Nic Shang — aspiring quant/data analyst with focus on investment risk modelling.  
-Studying CQF with focus on GARCH, simulation-based risk, and portfolio construction.
-
----
-
-*This project is built for learning purposes and does not reflect any actual recommendation or investment advice.*
