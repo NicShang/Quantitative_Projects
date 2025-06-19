@@ -10,7 +10,7 @@ This project simulates a Cbus Super Fund–style multi-asset portfolio and uses 
   
   I built this project to reflect that long-term, risk-conscious mindset. By replicating Cbus’s asset allocation with ETFs and applying logistic regression to predict forward-looking drawdowns, I aimed to simulate how pension risk teams can anticipate periods of elevated downside risk based on recent return and volatility behavior.
   
-  This work helped me connect portfolio modeling with fiduciary duty, reinforcing the idea that in long-horizon investing, risk awareness—not return maximization—is what truly matters.
+  This work helped me connect portfolio modeling with fiduciary duty, reinforcing the idea that in long-horizon investing, risk awareness, not return maximization, is what truly matters.
 
 ---
 
