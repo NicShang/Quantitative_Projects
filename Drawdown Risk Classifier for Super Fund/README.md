@@ -10,7 +10,7 @@ This project simulates a Cbus Super Fund–style multi-asset portfolio and uses 
 
 - Constructs a historical NAV curve by weighting ETFs based on Cbus asset allocations.
 
-- Labels each date based on whether the portfolio suffers a maximum drawdown > 5% in the next 30 days.
+- Labels each date based on whether the portfolio suffers a maximum drawdown > 5% in the next 20 days.
 
 - Uses lagging features (e.g., 5-day return, 20-day volatility) to predict future drawdowns via logistic regression.
 
