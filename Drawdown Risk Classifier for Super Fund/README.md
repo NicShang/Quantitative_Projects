@@ -4,6 +4,16 @@ This project simulates a Cbus Super Fund–style multi-asset portfolio and uses 
 
 ---
 
+## Why I Built This Project
+
+  Superannuation funds like Cbus exist to preserve and grow capital over decades, not chase short-term alpha. Their portfolios must support members' retirement needs 20–30 years into the future—making drawdown risk management far more critical than tactical gains.
+  
+  I built this project to reflect that long-term, risk-conscious mindset. By replicating Cbus’s asset allocation with ETFs and applying logistic regression to predict forward-looking drawdowns, I aimed to simulate how pension risk teams can anticipate periods of elevated downside risk based on recent return and volatility behavior.
+  
+  This work helped me connect portfolio modeling with fiduciary duty, reinforcing the idea that in long-horizon investing, risk awareness—not return maximization—is what truly matters.
+
+---
+
 ## Project Summary
 
 - Simulates the “Growth (MySuper)” option of Cbus Super using publicly available ETF proxies.
@@ -22,7 +32,7 @@ This project simulates a Cbus Super Fund–style multi-asset portfolio and uses 
 
 - Model Type: Logistic Regression with class_weight=balanced
 
-- Target: Will there be a drawdown > 5% in next 30 days?
+- Target: Will there be a max drawdown > 5% in next 20 days?
 
 - Test Accuracy: 85%
 
@@ -43,16 +53,6 @@ This project simulates a Cbus Super Fund–style multi-asset portfolio and uses 
 - scikit-learn (Pipeline, LogisticRegression, metrics)
 
 - plotly, matplotlib (for visualization)
-
----
-
-## Why I Built This Project
-
-  Superannuation funds like Cbus exist to preserve and grow capital over decades, not chase short-term alpha. Their portfolios must support members' retirement needs 20–30 years into the future—making drawdown risk management far more critical than tactical gains.
-  
-  I built this project to reflect that long-term, risk-conscious mindset. By replicating Cbus’s asset allocation with ETFs and applying logistic regression to predict forward-looking drawdowns, I aimed to simulate how pension risk teams can anticipate periods of elevated downside risk based on recent return and volatility behavior.
-  
-  This work helped me connect portfolio modeling with fiduciary duty, reinforcing the idea that in long-horizon investing, risk awareness—not return maximization—is what truly matters.
 
 ---
 
