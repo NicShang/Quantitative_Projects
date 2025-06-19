@@ -6,7 +6,7 @@ This project simulates a Cbus Super Fund–style multi-asset portfolio and uses 
 
 ## Why I Built This Project
 
-  Super funds like Cbus exist to preserve and grow capital over decades, not chase short-term alpha. Their portfolios must support members' retirement needs 20–30 years into the future—making drawdown risk management far more critical than tactical gains.
+  Super funds like Cbus exist to preserve and grow capital over decades, not chase short-term alpha. Their portfolios must support members' retirement needs 20–30 years into the future, making drawdown risk management far more critical than tactical gains.
   
   I built this project to reflect that long-term, risk-conscious mindset. By replicating Cbus’s asset allocation with ETFs and applying logistic regression to predict forward-looking drawdowns, I aimed to simulate how pension risk teams can anticipate periods of elevated downside risk based on recent return and volatility behavior.
   
