@@ -53,17 +53,17 @@ The goal is to quantify tail risks of this portfolio under a 95% confidence leve
 
 - Scalable to real-world use cases such as:
 
-    Rebalancing triggers
-    
-    Compliance and reporting workflows
-    
-    Stress testing and downside risk analytics
+          Rebalancing triggers
+          
+          Compliance and reporting workflows
+          
+          Stress testing and downside risk analytics
 
 - Highlights technical proficiency in:
-
-    Python programming
-    
-    Financial risk theory (VaR, CVaR)
-    
-    Business-aware modeling suited for quantitative roles like Deloitte QFS.
+      
+          Python programming
+          
+          Financial risk theory (VaR, CVaR)
+          
+          Business-aware modeling suited for quantitative roles like Deloitte QFS.
 
