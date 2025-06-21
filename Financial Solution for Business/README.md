@@ -1,19 +1,19 @@
 ## Project Overview: Super Fund Portfolio Risk Modeling
 This project simulates a realistic investment scenario for superannuation funds like Cbus Super Fund, by constructing a diversified ETF-based portfolio comprising:
 
-  Australian equities (VAS.AX)
-  
-  International developed equities (IVV)
-  
-  Fixed income (VAF.AX)
-  
-  Property (VNQ)
-  
-  Infrastructure (IFRA)
-  
-  Cash equivalents (AAA.AX)
-  
-  Emerging markets (IEM.AX)
+      Australian equities (VAS.AX)
+      
+      International developed equities (IVV)
+      
+      Fixed income (VAF.AX)
+      
+      Property (VNQ)
+      
+      Infrastructure (IFRA)
+      
+      Cash equivalents (AAA.AX)
+      
+      Emerging markets (IEM.AX)
 
 The goal is to quantify tail risks of this portfolio under a 95% confidence level, using multiple Value at Risk (VaR) methodologies.
 
