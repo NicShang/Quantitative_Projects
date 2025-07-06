@@ -1,47 +1,34 @@
-# ETF Portfolio Optimization   
- 
+# ETF Portfolio Optimization | Mandate-Constrained Allocation Engine
 
-This project simulates a real-world ETF portfolio construction and optimization process, reflecting the logic used in institutional investment mandates. Developed in Python, it integrates quantitative techniques and reporting practices commonly used in fund strategy, portfolio analytics, and client reporting roles.
+This project builds a systematic asset allocation pipeline tailored for institutional ETF portfolios, designed to align with long-horizon return mandates (e.g., CPI+6%) and regulatory-style constraints. It offers robust performance simulation, intuitive visualization, and a reusable codebase supporting strategic portfolio design and communication.
 
----
+## Objective
 
-## Objective  
-To construct a CPI+6% risk-adjusted ETF portfolio using a core-satellite strategy and optimize asset allocation under regulatory constraints and Sharpe maximization objectives.
+To construct a transparent and reusable optimization engine that:
 
----
+- Meets predefined mandate objectives (e.g., CPI+6% real return)
+- Embeds policy constraints (e.g., ≥65% core, ≤15% satellite)
+- Enables quantitative justification of portfolio construction decisions  
+- Supports scenario testing for stress-aware investment planning
 
-## Key Features  
-- **Core-Satellite Allocation**: 65% core, 35% satellite ETF exposure  
-- **Return Target**: CPI + 6% expected return  
-- **Constraints**:  
-  - Total weight = 100%  
-  - Core ≥ 65%  
-  - Satellite ETF ≤ 15% each  
-- **Mandate Compliance**: Reflects real mandates (e.g., CFS fixed income strategy)
+## Methodology
 
----
+- **Languages/Libraries**: Python (`pandas`, `numpy`, `scipy`, `plotly`)
+- **Modeling Features**:
+  - Log-transformed ETF price returns with missing data handling
+  - Modular portfolio optimizer (Sharpe-maximizing under constraints)
+  - Monte Carlo simulation (5,000 randomized portfolios) for stress testing
+- **Visualization Tools**:
+  - Efficient frontier, optimal allocation zones, drawdown diagnostics
+  - Interactive charts (Plotly) for stakeholder reporting
 
-## Technical Highlights  
-- **Python Tools**: NumPy, SciPy.optimize, Matplotlib, Plotly  
-- **Sharpe-Max Portfolio Optimization**: Constraint-based mean-variance optimization  
-- **Monte Carlo Simulation**: 5,000 random weight simulations to evaluate return/volatility trade-offs  
-- **Efficient Frontier Visualization**: Dynamic risk-return mapping  
-- **Scenario Testing**: Stress-tested return and Sharpe sensitivity
+## Business Value
 
----
+This project mirrors the decision workflow of superannuation funds, wealth managers, and institutional consultants, offering:
 
-## Transferable Skills  
-- Portfolio modeling and return attribution  
-- Regulatory constraints encoding  
-- Python-based scenario diagnostics  
-- Risk/return trade-off interpretation  
-- Communicating model outputs in fund reporting language
+- **Mandate-Driven Allocation Support**: Empowers investment teams to validate whether proposed ETF portfolios satisfy real-return targets under regulatory or client-imposed constraints  
+- **Risk-Aware Scenario Planning**: Enables simulation-based understanding of downside exposure under various market regimes  
+- **Clear Stakeholder Communication**: Provides intuitive visual outputs (efficient frontier, allocation diagnostics) that bridge technical optimization with practical decision-making  
+- **Reusable Architecture**: The Python-based framework is modular and scalable, supporting different asset sets, client mandates, or strategy overlays with minimal changes  
 
----
-
-## Sample Outputs  
-> Efficient frontier plotted with Sharpe-max solution  
-> Optimization weights table under constraints  
-> Return distribution and downside risk profile
-
-
+This solution provides not only analytical rigor but also improves communication between quantitative analysts, portfolio managers, and non-technical stakeholders—making it suitable for real-world advisory, asset allocation, or investment committee settings.
