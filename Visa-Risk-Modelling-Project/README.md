@@ -1,50 +1,34 @@
-# Visa Inc. Risk Modelling Project | Rolling Volatility Forecasting
+# Risk Modelling Project | Rolling Volatility Forecasting
 
-This project simulates a real-world risk management workflow for Visa Inc., focused on estimating multi-step forward volatility and stress metrics to support dynamic risk reporting, attribution analysis, and pre-trade control environments.
+This project simulates a forward-looking volatility monitoring pipeline designed to support dynamic risk diagnostics, stress-tested scenario reporting, and signal attribution in portfolio oversight and capital planning.
 
-## 🎯 Project Objective
+## Objective
+To forecast short-term market volatility (1–10 days ahead) using AR-GARCH family models and generate actionable risk metrics, including Value-at-Risk (VaR) and Expected Shortfall (ES), supporting:
 
-To forecast 1–10 day forward volatility using AR-GARCH models and quantify risk through Value-at-Risk (VaR) and Expected Shortfall (ES) measures, supporting:
+- Early-warning alerts for shifting market conditions
+- Scenario-based stress reporting
+- Exposure and threshold tracking in capital management frameworks
 
-- Intraday exposure tracking
-- Pricing validation
-- Trade risk flags and stress attribution
-
-## 🛠 Methodology
+## Methodology
 
 ### 1. Volatility Forecasting
-- **Model**: AR(1)-GARCH(1,1)
-- **Library**: `arch`, `statsmodels`, `pandas`, `numpy`
-- **Target**: Visa Inc. (V) stock daily returns
-- **Data**: Refinitiv-sourced OHLC data
-- **Output**: Multi-horizon volatility forecasts (1 to 10 days)
+- **Model**: AR(6)-GARCH(3,7)
+- **Libraries**: arch, statsmodels, pandas, numpy
+- **Target**: Daily returns from Refinitiv-sourced OHLC equity data
+- **Output**: Rolling VaR/ES estimates, 1–10 day multi-step volatility forecasts
 
-### 2. VaR & Expected Shortfall
-- **Approach**: Parametric Gaussian distribution
-- **Rolling Forecast**: Expanding-window re-estimation
-- **Confidence Levels**: 95% and 99%
-- **Metrics**:
-  - Value-at-Risk (VaR)
-  - Expected Shortfall (ES)
-  - Realized loss comparison and exceedance tracking
+### 2. Stress Simulation & Attribution
+- Simulated 5,000 Monte Carlo paths from GARCH residuals to evaluate downside risk under stressed regimes
+- Identified high-volatility clusters using exceedance tracking across confidence thresholds
+- Structured outputs into reporting-ready format for scenario-based dashboards
 
-### 3. Monte Carlo Simulation
-- Used GARCH residuals to simulate future return paths
-- Applied stochastic processes to assess tail risk
-- Visualized expected return distribution under multiple regimes
+### 3. Model Validation
+- Performed diagnostic checks including Jarque-Bera and Ljung-Box tests
+- Validated distribution fit and autocorrelation behavior to ensure model robustness
 
-## 📈 Key Results
+### 4. Deliverables
+- Fully automated Python pipeline for volatility forecasting and risk diagnostics
+- Structured for modular reuse in capital planning, stress testing, and exposure management environments
 
-- Generated rolling volatility forecasts over 1–10 day periods
-- Computed daily 95% and 99% VaR & ES values for Visa
-- Tracked exceedances (actual loss > VaR) to evaluate model reliability
-- Visualized risk metrics with `matplotlib` and `plotly`
-
-## 💡 Skills & Tools Demonstrated
-
-- Time Series Modelling (AR-GARCH)
-- Volatility attribution and stress testing
-- Rolling forecasts and backtesting
-- VaR/ES estimation and model exceedance tracking
-- Python: `arch`, `pandas`, `statsmodels`, `matplotlib`, `plotly`
-
+## Business Relevance
+This project mirrors real-world workflows in financial risk advisory and reporting, offering practical implementation examples of how quantitative models can enhance portfolio oversight and inform decision-making under uncertainty. It highlights how technical outputs can be translated into clear, usable insights for non-technical stakeholders.
