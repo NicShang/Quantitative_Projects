@@ -1,37 +1,45 @@
 # ESG Data Visualization | Clean Energy Transition Dashboard
 
-This project visualizes global ESG indicators related to clean energy access, usage, and environmental sustainability. Built using Python, the dashboard is designed to support policymakers and development organizations in understanding clean energy transitions across countries.
+A data visualization project built to transform raw ESG indicators into executive-ready insights for decision-makers and stakeholders involved in sustainability, energy access, and policy planning.
 
-##  Objective
+## Objective
 
-To present an executive-ready summary of energy transition patterns using real-world ESG data — with a focus on:
+To structure and present key clean energy transition patterns across countries using real-world ESG data, emphasizing the potential of data-driven diagnostics in strategic reporting and resource allocation. Key focuses include:
 
-- Electricity access gaps between rural and urban populations
-- Renewable energy consumption trends
-- Emissions intensity and sustainability risk indicators
+- Gaps in electricity access between rural and urban populations
+- Patterns in renewable energy consumption growth
+- Emission intensity and sustainability-related risk indicators
 
-##  Tools & Technologies
+## Business Relevance
 
-- **Languages**: Python
-- **Libraries**: pandas, seaborn, matplotlib, plotly, geopandas, folium
-- **Platform**: Jupyter Notebook
-- **Visualization Types**:
-  - Bar and scatter plots
+This project simulates the role of a quant analyst supporting environmental data advisory. It demonstrates how unstructured sustainability datasets can be cleaned, modeled, and visualized to:
+
+- Inform investment committees or government bodies on infrastructure priorities
+- Identify ESG-related risks and opportunities across regions or sectors
+- Enhance regulatory and sustainability reporting through dynamic, stakeholder-friendly outputs
+
+By enabling a high-level overview with the ability to drill down by geography and metric, this project aligns with the practical demands of ESG strategy design, transparency, and compliance support.
+
+## Tools & Technologies
+
+- **Languages**: Python  
+- **Libraries**: pandas, seaborn, matplotlib, plotly, geopandas, folium  
+- **Platform**: Jupyter Notebook  
+- **Visualization Techniques**:
   - Choropleth maps
-  - Pairwise correlations
-  - Temporal trend analysis
+  - Pairwise correlation matrices
+  - Time series line plots
+  - Bar and scatter plots with categorical breakdowns
 
-##  Key Visual Insights
+## Key Features
 
-- **Access vs. Infrastructure Time**: Countries with long delays in electricity provision generally show lower rural access rates.
-- **Renewables vs. Emissions**: Developed countries often lead in renewable adoption but also contribute heavily to GHG emissions.
-- **Regional Hotspots**: Sub-Saharan Africa and South Asia show consistently lower performance on clean energy indicators.
+- Designed for interpretability, with visuals structured for non-technical audiences
+- Modular pipeline for data cleaning, feature engineering, and plotting
+- Scalable structure for future ESG dimensions (e.g., social or governance layers)
+- Built with reusability in mind—suitable for integration into reporting workflows or internal dashboards
 
-##  Methodology
+## Future Extensions
 
-- Cleaned missing data and normalized cross-country indicators
-- Grouped countries by income levels and regions (e.g., OECD vs. non-OECD)
-- Conducted exploratory data analysis (EDA) to uncover policy-relevant patterns
-- Used interactive visualizations and geospatial mapping to enhance impact
-
-
+- Automated reporting with scheduling (e.g., via Airflow)
+- UI-based dashboarding (e.g., Streamlit or Power BI)
+- Integration with firm-level ESG scoring models or sustainability indices
