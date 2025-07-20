@@ -1,4 +1,4 @@
-# Max Drawdown Predictor (Cbus Super Portfolio Simulation)
+# Max Drawdown Predictor (Cbus Super Fund Case)
 
 This project simulates a Cbus Super Fund–style multi-asset portfolio and uses logistic regression to predict whether a drawdown greater than 5% will occur in the next 30 days. It combines ETF-based proxy modeling, NAV construction, and classification techniques to turn market features into actionable early warnings.
 
