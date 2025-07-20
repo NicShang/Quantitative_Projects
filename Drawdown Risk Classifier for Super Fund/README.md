@@ -57,7 +57,5 @@ This project simulates a Cbus Super Fund–style multi-asset portfolio and uses 
 ---
 
 ## Data Source
-
-- ETF prices via [Yahoo Finance](https://finance.yahoo.com)
 - Portfolio weightings based on public [Cbus Super holdings (Dec 2024)](https://www.cbussuper.com.au/super/my-investment-options/cbus-investment-holdings)
 
