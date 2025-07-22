@@ -11,7 +11,7 @@ Under frameworks such as IRB, IFRS9, and stress testing, banks are required to d
 ## 3. Data Simulation
 
 To support the modeling process, we generate a synthetic dataset that includes:
-- `X1` and `X2` as borrower-specific features
+- **X1** and **X2** as borrower-specific features
 - `T` as the time-to-event or loan survival time
 - `event` as the observed default outcome, where 1 indicates a default and 0 indicates survival
 
@@ -35,7 +35,7 @@ To evaluate the model’s performance, we implemented the following validation m
 ## 6. Stress Testing: Impact of Macroeconomic Shocks
 
 To evaluate model robustness under macroeconomic uncertainty, we introduced interest rate (`X3`) as a proxy stress factor. Using historical RBA cash rate data:
-- We randomly sampled interest rates from the historical time series and added them as a new feature `X3`
+- I randomly sampled interest rates from the historical time series and added them as a new feature `X3`
 - The Poisson model was retrained using the new feature set `X1`, `X2`, and `X3`
 - Predicted PDs were then analyzed against `X3` to simulate how rising interest rates might impact default probabilities
 
